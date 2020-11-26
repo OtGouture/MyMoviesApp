@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_movie"
+    tools:context=".MovieDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orig" />
+
+    <ImageView
+        android:id="@+id/imageMaskGradient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/imageBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mask_gradient" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        style="@style/TextBaseLight"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/ic_back"
+        android:gravity="left|center_vertical"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNameMovie"
+        style="@style/TextBaseLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avengers_end_game"
+        android:textFontWeight="900"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/imageBackground"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ImageView
+        android:id="@+id/imageAgeLimitBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/textNameMovie"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:srcCompat="@drawable/age_limit_background" />
+
+    <TextView
+        android:id="@+id/textAgeLimit"
+        style="@style/TextBaseLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_13"
+        android:textSize="12sp"
+        android:textFontWeight="900"
+        app:layout_constraintBottom_toBottomOf="@id/imageAgeLimitBackground"
+        app:layout_constraintEnd_toEndOf="@id/imageAgeLimitBackground"
+        app:layout_constraintStart_toStartOf="@id/imageAgeLimitBackground"
+        app:layout_constraintTop_toTopOf="@id/imageAgeLimitBackground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

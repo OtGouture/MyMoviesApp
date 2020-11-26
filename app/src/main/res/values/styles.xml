@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style  name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+    <style name="TextBaseLight" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextBaseBlack" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextBaseNameActor" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/name_actor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">#0000</item>
+    </style>
+
+
+
+</resources>
